@@ -1,0 +1,81 @@
+{
+  "_from": "cordova-plugin-geofence",
+  "_id": "cordova-plugin-geofence@0.7.0",
+  "_inBundle": false,
+  "_integrity": "sha1-vz7XCkpYLR41eWWc82Xi43iJDyU=",
+  "_location": "/cordova-plugin-geofence",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-geofence",
+    "name": "cordova-plugin-geofence",
+    "escapedName": "cordova-plugin-geofence",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-geofence/-/cordova-plugin-geofence-0.7.0.tgz",
+  "_shasum": "bf3ed70a4a582d1e3579659cf365e2e378890f25",
+  "_spec": "cordova-plugin-geofence",
+  "_where": "/Users/Ah_Hoehoe_xD/GitHub/ionic_dev/geolocation_alert/geolocation_alert",
+  "author": {
+    "name": "Cowbell Labs"
+  },
+  "bugs": {
+    "url": "https://github.com/cowbell/cordova-plugin-geofence/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-geofence",
+    "platforms": [
+      "android",
+      "ios",
+      "wp8",
+      "windows8",
+      "windows"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova geofence plugin",
+  "devDependencies": {
+    "cordova": "^6.1.1",
+    "cordova-paramedic": "git+https://github.com/apache/cordova-paramedic.git"
+  },
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=5.0.0"
+    }
+  ],
+  "homepage": "https://github.com/cowbell/cordova-plugin-geofence#readme",
+  "keywords": [
+    "cordova",
+    "plugin",
+    "geofence",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-wp8",
+    "cordova-windows8",
+    "cordova-windows"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-geofence",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cowbell/cordova-plugin-geofence.git"
+  },
+  "scripts": {
+    "posttest": "sed -i 's/play-services-location:9.8.0/play-services-location:+/g' plugin.xml",
+    "pretest": "sed -i 's/play-services-location:+/play-services-location:9.8.0/g' plugin.xml",
+    "test": "cordova-paramedic --platform android@6.0 --plugin . --verbose",
+    "test:ios": "FIX_PARAMEDIC=true cordova-paramedic --platform ios --plugin . --verbose"
+  },
+  "typings": "./typings/cordova-plugin-geofence.d.ts",
+  "version": "0.7.0"
+}
